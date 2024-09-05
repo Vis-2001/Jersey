@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compute Blood Cost</title>
+</head>
+<body>
+    <h1>Compute Blood Cost</h1>
+    <form action="rest/login/txt/computeCost" method="get">
+        <label for="quantity">Quantity (in ml):</label>
+        <input type="text" id="quantity" name="quantity" required><br><br>
+
+        <label for="bloodGroup">Blood Group:</label>
+        <select id="bloodGroup" name="bloodGroup" required>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select><br><br>
+
+        <label for="userType">User Type:</label>
+        <select id="userType" name="userType" required>
+            <option value="H">Hospital</option>
+            <option value="I">Individual</option>
+        </select><br><br>
+
+        <button type="submit">Compute Cost</button>
+    </form>
+</body>
+</html>
